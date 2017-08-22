@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
+import Bio from './BioPopUp';
 
 export class DefaultPage extends Component {
   static propTypes = {
@@ -13,11 +14,7 @@ export class DefaultPage extends Component {
   render() {
     return (
       <div className="home-default-page">
-        <div className="section -title">
-          <img alt="" className="header-circle" src="../images/me.jpg" />
-          <h1>{"I'm Antony Cadogan"}</h1>
-          <h2>UX Unicorn, Visual Designer, React Developer</h2>
-        </div>
+        <Bio />
         <div className="section -bio">
           <h1>Bio</h1>
         </div>

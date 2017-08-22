@@ -4,6 +4,12 @@ html, body, #react-root {
   height: 100%;
 }
 
+*{
+  &:focus{
+    outline: none;
+  }
+}
+
 body, td {
   color: #555;
   font-family: Arial, "Helvetica Neue",Helvetica,sans-serif;
@@ -11,10 +17,7 @@ body, td {
 a {
   color: #2db7f5;
   text-decoration: none;
-  &:hover {
-    color: #f90;
-    border-bottom: 1px solid;
-  }
+
 }
 
 h1 {
