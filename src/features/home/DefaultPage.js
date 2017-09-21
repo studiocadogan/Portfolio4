@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
-import Bio from './BioPopUp';
+import Underline from '../common/Underline';
+
 
 export class DefaultPage extends Component {
   static propTypes = {
@@ -11,15 +12,15 @@ export class DefaultPage extends Component {
     actions: PropTypes.object.isRequired,
   };
 
+
   render() {
     return (
       <div className="home-default-page">
-        <Bio />
-        <div className="section -bio">
-          <h1>Bio</h1>
-        </div>
-        <div className="section -social">
-          <h1>Social</h1>
+        <div className="section -title">
+          <h1><span>STUDIO</span> CADOGAN
+            <Underline thickness={3} speed={300} timeout={500} origin="right" />
+          </h1>
+          <h2>antony cadogan: ux unicorn, visual designer, react developer.</h2>
         </div>
       </div>
     );

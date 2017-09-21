@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import NavBar from '../common/NavBar';
+import Nav from '../common/NavBar';
+import Bio from './BioPopUp';
+import Underline from "../common/Underline";
 
 /*
   This is the root component of your app. Here you define the overall layout
@@ -19,7 +21,10 @@ export default class App extends Component {
   render() {
     return (
       <div className="home-app">
-        <NavBar />
+        <Nav />
+        <Bio />
+          <Underline timeout={1000} thickness={3} speed={300} origin="left" />
+
         <div className="page-container">
           {this.props.children}
         </div>

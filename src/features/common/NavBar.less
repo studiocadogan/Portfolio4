@@ -1,13 +1,51 @@
 @import '../../styles/mixins.less';
 
 .common-nav-bar {
-  width: @navbarWidth;
-  height: 100vh;
+  height: @navbarHeight;
+  width: 100%;
+  top:0;
+  max-width: 100%;
   position: relative;
-  float: left;
-  background-image: -webkit-linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
-  background-image: -moz-linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
-  background-image: -o-linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
-  background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+  display: flex;
+  justify-content: center;
+  z-index: 5;
+  align-items: center;
+  background-color: #FF9A8B;
+  background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+
+
+  .nav-link {
+
+    text-align: center;
+    padding: 0 10px;
+    font-family: 'Avenir LT Std', sans-serif;
+    font-weight: 300;
+    user-select: none;
+    cursor: pointer;
+
+    &:first-of-type, &:last-of-type{
+      font-size: 24px;
+      font-weight: bold;
+
+      span{
+        font-weight: 100;
+      }
+    }
+
+    &:first-of-type{
+      margin-right: auto;
+    }
+
+    &:last-of-type{
+      margin-left: auto;
+    }
+    a {
+      color: @defaultTextColor;
+      font-size: 20px;
+
+    }
+  }
 
 }
+
+

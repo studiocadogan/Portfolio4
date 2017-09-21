@@ -129,6 +129,7 @@
     "webpack-node-externals": "^1.6.0"
   },
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "react-transition-group": "^2.2.0"
   }
 }

@@ -1,6 +1,8 @@
 import initialState from './initialState';
+import { reducer as toggleBioBoxReducer } from './toggleBioBox';
 
 const reducers = [
+  toggleBioBoxReducer,
 ];
 
 export default function reducer(state = initialState, action) {
