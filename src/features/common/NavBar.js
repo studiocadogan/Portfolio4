@@ -29,8 +29,8 @@ export class NavBar extends Component {
 
     renderURLs() {
       return this.state.routes.map(
-          route => <div className="nav-link" key={this.state.routes.indexOf(route)}>
-              <Link to={`${route.url}`}>{`${route.title}`}</Link></div>);
+        route => (<div className="nav-link" key={this.state.routes.indexOf(route)}>
+          <Link to={`${route.url}`}>{`${route.title}`}</Link></div>));
     }
 
 
